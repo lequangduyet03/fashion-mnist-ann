@@ -22,10 +22,12 @@ Model deployment with Streamlit
 Demonstrate practical ML deployment skills suitable for Data Intern / ML Intern roles
 
 🗂️ Project Structure
+
 ├── app.py                     # Streamlit web application
 ├── fashion_mnist_ann.ipynb    # Model training & evaluation notebook
 ├── fashion_mnist_ann_model.h5 # Trained ANN model
 ├── README.md                  # Project documentation
+
 
 📊 Dataset
 
@@ -87,6 +89,7 @@ NumPy
 Matplotlib
 
 🚀 How to Run the App
+
 1️⃣ Install dependencies
 pip install streamlit tensorflow numpy matplotlib
 
