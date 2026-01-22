@@ -1,4 +1,5 @@
 Fashion MNIST Classification App (ANN + Streamlit)
+
 📌 Project Overview
 
 This project is a simple image classification web application built using an Artificial Neural Network (ANN) trained on the Fashion MNIST dataset.
