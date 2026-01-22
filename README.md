@@ -1,122 +1,122 @@
-Fashion MNIST Classification — ANN
-📌 Overview
+Fashion MNIST Classification App (ANN + Streamlit)
+📌 Project Overview
 
-This project implements an Artificial Neural Network (ANN) to classify clothing images from the Fashion-MNIST dataset — a benchmark dataset of 28×28 grayscale fashion item images from 10 categories.
+This project is a simple image classification web application built using an Artificial Neural Network (ANN) trained on the Fashion MNIST dataset.
+The app allows users to select an image from the test set and view the predicted clothing category along with the model’s confidence score.
 
-The purpose is to demonstrate data preprocessing, model building, training, evaluation, and visualization using deep learning fundamentals.
+The application is deployed locally using Streamlit, providing an interactive interface for model inference.
 
-📦 Dataset
+🎯 Objectives
 
-Fashion-MNIST is a drop-in replacement for the classic MNIST dataset with more challenging fashion images, consisting of:
+Train an ANN model to classify Fashion MNIST images
 
-70,000 total images (60,000 train + 10,000 test)
+Build an end-to-end ML workflow:
 
-10 classes of clothing items
+Data loading & preprocessing
 
-Each image is 28×28 pixels, grayscale
+Model training & evaluation
 
-Label	Description
-0	T-shirt/top
-1	Trouser
-2	Pullover
-3	Dress
-4	Coat
-5	Sandal
-6	Shirt
-7	Sneaker
-8	Bag
-9	Ankle boot
+Model deployment with Streamlit
+
+Demonstrate practical ML deployment skills suitable for Data Intern / ML Intern roles
+
+🗂️ Project Structure
+├── app.py                     # Streamlit web application
+├── fashion_mnist_ann.ipynb    # Model training & evaluation notebook
+├── fashion_mnist_ann_model.h5 # Trained ANN model
+├── README.md                  # Project documentation
+
+📊 Dataset
+
+Fashion MNIST
+
+70,000 grayscale images (28x28)
+
+10 clothing categories:
+
+T-shirt/top
+
+Trouser
+
+Pullover
+
+Dress
+
+Coat
+
+Sandal
+
+Shirt
+
+Sneaker
+
+Bag
+
+Ankle boot
+
 🧠 Model
 
-This repository uses a Feedforward Neural Network (ANN) with:
+Type: Artificial Neural Network (ANN)
 
-Input layer — flattened vector of image pixels
+Framework: TensorFlow / Keras
 
-One or more hidden dense layers with ReLU activation
+Input: 28×28 grayscale images
 
-Softmax output layer for 10-class classification
+Output: 10-class softmax probability distribution
 
-🛠️ Tech Stack
+🖥️ Web Application (Streamlit)
+Features:
 
-Python
+Select any test image using a slider
 
-NumPy
+Visualize the selected image
+
+Predict clothing category
+
+Display prediction confidence
+
+Technologies Used:
+
+Streamlit
 
 TensorFlow / Keras
 
+NumPy
+
 Matplotlib
 
-Scikit-learn
+🚀 How to Run the App
+1️⃣ Install dependencies
+pip install streamlit tensorflow numpy matplotlib
 
-Jupyter Notebook
+2️⃣ Run Streamlit app
+streamlit run app.py
 
-📋 Getting Started
-📥 Clone Repository
-git clone https://github.com/lequangduyet03/fashion-mnist-ann.git
-cd fashion-mnist-ann
+3️⃣ Open browser
 
-📖 Open Notebook
+Streamlit will automatically open at:
 
-Use Jupyter Notebook or JupyterLab:
+http://localhost:8501
 
-jupyter notebook fashion_mnist_ann.ipynb
+📈 Example Output
 
-🧪 Workflow Steps
+Predicted Class: Sneaker
 
-Import and analyze Fashion MNIST dataset
-Using Keras or TensorFlow utilities to load images & labels.
+Confidence Score: 0.92
 
-Data preprocessing
+🛠️ Skills Demonstrated
 
-Normalize pixel intensities
+Data preprocessing & normalization
 
-Flatten images for ANN input
+Neural network modeling
 
-Build ANN model
+Model inference
 
-Dense layers
+Interactive ML app deployment
 
-ReLU activations
+Clean project structuring
 
-Softmax on output
-
-Train & Evaluate
-
-Train on train dataset
-
-Evaluate accuracy and loss on test dataset
-
-Visualize results
-
-Plot accuracy/loss curves
-
-Display sample predictions
-
-📊 Results & Metrics
-
-Describe here your final training and test accuracy, loss curves, confusion matrix or other metrics.
-
-(e.g., “Test accuracy: ~92%” or “Loss stabilized after 20 epochs”)
-
-🧠 Learnings
-
-Preprocessing images for ML models
-
-Building ANN with Keras
-
-Visualization of training dynamics
-
-Limitations of ANN on image data
-
-🚀 Future Improvements
-
-Use Convolutional Neural Network (CNN) for better accuracy
-
-Hyperparameter tuning
-
-Save model weights + inference script
-
-Add interactive demo or deployment
+ML-to-product thinking
 
 👤 Author
 
