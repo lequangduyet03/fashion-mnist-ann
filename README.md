@@ -24,8 +24,11 @@ Demonstrate practical ML deployment skills suitable for Data Intern / ML Intern 
 🗂️ Project Structure
 
 ├── app.py                     # Streamlit web application
+
 ├── fashion_mnist_ann.ipynb    # Model training & evaluation notebook
+
 ├── fashion_mnist_ann_model.h5 # Trained ANN model
+
 ├── README.md                  # Project documentation
 
 
